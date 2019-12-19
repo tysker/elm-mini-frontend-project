@@ -1,97 +1,54 @@
---module Main exposing (..)
+module Main exposing (..)
 --
---import Browser
---import Html exposing (..)
---import Html.Attributes exposing (..)
---import Html.Events exposing (..)
---import Http
---import Json.Decode exposing (Decoder, field, string, int, list, map3)
+--ELM PACKAGES
+import Browser
+import Event exposing (Event(..))
+import Fetch exposing (deleteGamer, fetchGamer, fetchGamers, printError)
 --
---main = Browser.element
---  { init = init
---  , update = update
---  , subscriptions = noSubscriptions
---  , view = showIt
---  }
---
----- An Person Object
---type alias Person =
---    { name: String
---    , age: Int
---    , email: String
---    }
---
----- "Maybe" represent values that may or may not exist. It can be useful if you have a record
----- field that is only filled in sometimes. Or if a function takes a value sometimes,
----- but does not absolutely need it.
---type alias Model =
---  { person: Maybe Person
---  , msg: String
---  }
---
---type Msg
---  = FetchPerson
---  | GotPerson (Result Http.Error Person)
---
----- "Cmd" / A command is a way of telling Elm, “Hey, I want you to do this thing!” So if you want to send an HTTP request,
-----         you would need to command Elm to do it. Or if you wanted to ask for geolocation, you would need to command Elm to go get it
----- "Cmd.none" / Tells the runtime that there are no commands.
----- "Nothing" / Provide a default value, turning an optional value into a normal
---init: () -> (Model, Cmd Msg)
---init _ = (Model Nothing "OK", Cmd.none)
---
---update : Msg -> Model ->  ( Model, Cmd Msg )
---update message model =
---  case message of
---    FetchPerson -> (model, fetchPerson)
---
---    GotPerson (Ok p) -> ({ model | person = Just p }, Cmd.none)
---
---    GotPerson (Err err) -> ({ model | msg = (printError err) }, Cmd.none)
---
---printError: Http.Error -> String
---printError error =
---  case error of
---    Http.BadBody m -> "Bad body "++m
---    Http.BadUrl u -> "Bad URL: "++u
---    Http.Timeout -> "Timeout"
---    Http.NetworkError -> "Network panic"
---    Http.BadStatus i -> "Bad Status: "++(String.fromInt i)
---
---fetchPerson: Cmd Msg
---fetchPerson =
---  Http.get
---    { url = "person.json"
---    , expect = Http.expectJson GotPerson personDecoder
---    }
---
---personDecoder: Json.Decode.Decoder Person
---personDecoder =
---  Json.Decode.map3 Person
---    (Json.Decode.at ["name"] Json.Decode.string)
---    (Json.Decode.at ["age"] Json.Decode.int)
---    (Json.Decode.at ["email"] Json.Decode.string)
---
---personListDecoder : Decoder (List Person)
---personListDecoder =
---    Json.Decode.list personDecoder
---
---noSubscriptions: Model -> Sub Msg
---noSubscriptions model =
---  Sub.none
---
---showIt: Model -> Html Msg
---showIt model =
---  div []
---    [ text ("Person is "++(getName model.person))
---    , br [] []
---    , text model.msg
---    , hr [] []
---    , button [onClick FetchPerson] [text "Click this"]
---    ]
---
---getName: Maybe Person -> String
---getName mp =
---  case mp of
---    Just person -> person.name++" age: "++(String.fromInt person.age)++ " email: " ++ person.email
---    Nothing ->     "Øhh"
+--LOCAL IMPORTS
+import Gamer as GA exposing (..)
+import Model exposing (Model)
+import View exposing (view)
+
+fromJust : Maybe Int -> Int
+fromJust x = case x of
+    Just y -> y
+    Nothing -> 0
+
+init: () -> (Model, Cmd Event)
+init _ = ( Model [] 0 0 "" , Cmd.none )
+
+update: Event -> Model -> (Model, Cmd Event)
+update event model =
+    case event of
+        --Get one gamer
+        FetchGamer (id) -> (model, fetchGamer id)
+        (GotGamer (Ok gamer)) -> ({ model | gamers = [gamer]}, Cmd.none)
+        (GotGamer (Err err)) -> ({ model | event = (printError err) }, Cmd.none)
+        --Get all gamer
+        FetchGamers -> (model, fetchGamers)
+        GotGamers (Ok gamer) -> ({ model | gamers = gamer }, Cmd.none)
+        GotGamers (Err err) -> ({ model | event = (printError err) }, Cmd.none)
+        --Post Gamer
+        GotPosted (Ok p) -> ( { model | event = ("Posted person successfully") } , Cmd.none)
+        GotPosted (Err err) -> ({ model | event = (printError err) }, Cmd.none)
+        --Delete Gamers
+        FetchDelete (id) -> (model, deleteGamer (id))
+        GotDeleted (Ok p) -> ( { model | event = ("Deleted person successfully.") } , Cmd.none)
+        GotDeleted (Err err) -> ({ model | event = ("Attempted to Delete person failed.") }, Cmd.none)
+        --Input Value
+        Input1 (newContent) -> ({ model | id = fromJust (String.toInt(newContent))}, Cmd.none)
+        Input2(newContent) -> ({ model | delete = fromJust (String.toInt(newContent))}, Cmd.none)
+        Input3 (newContent) -> ({ model | id = fromJust (String.toInt(newContent))}, Cmd.none)
+
+noSubscriptions: Model -> Sub Event
+noSubscriptions model =
+  Sub.none
+
+main : Program () Model Event
+main = Browser.element
+  { init = init
+  , update = update
+  , subscriptions = noSubscriptions
+  , view = view
+  }

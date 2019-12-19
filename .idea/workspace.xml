@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbcb21c7-8c43-4b07-8372-0ba6dea4ec44" name="Default Changelist" comment="" />
+    <list default="true" id="bbcb21c7-8c43-4b07-8372-0ba6dea4ec44" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model.elm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View.elm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Main.elmi" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Main.elmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Main.elmo" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Main.elmo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/d.dat" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/d.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homepage.elm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.elm" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,17 +33,23 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1VAiR6KFm9ZX8noYnSY9ouBWYDk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="D:/Kotlin/KotlinWebserver" />
     <property name="settings.editor.selected.configurable" value="org.elm.workspace.ui.ElmWorkspaceConfigurable" />
   </component>
@@ -89,5 +105,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="631" y="344" key="com.intellij.ide.util.TipDialog/-1680.0.1680.1010/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576731841139" />
+    <state x="1920" y="0" width="1893" height="1027" key="dock-window-1" timestamp="1576742174598">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1920" y="0" width="1893" height="1027" key="dock-window-1/-1680.0.1680.1010/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576742174598" />
+    <state x="1920" y="0" width="1414" height="1027" key="dock-window-2" timestamp="1576742939892">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1920" y="0" width="1414" height="1027" key="dock-window-2/-1680.0.1680.1010/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576742939892" />
   </component>
 </project>
