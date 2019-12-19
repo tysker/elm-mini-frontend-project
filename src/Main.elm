@@ -1,0 +1,97 @@
+--module Main exposing (..)
+--
+--import Browser
+--import Html exposing (..)
+--import Html.Attributes exposing (..)
+--import Html.Events exposing (..)
+--import Http
+--import Json.Decode exposing (Decoder, field, string, int, list, map3)
+--
+--main = Browser.element
+--  { init = init
+--  , update = update
+--  , subscriptions = noSubscriptions
+--  , view = showIt
+--  }
+--
+---- An Person Object
+--type alias Person =
+--    { name: String
+--    , age: Int
+--    , email: String
+--    }
+--
+---- "Maybe" represent values that may or may not exist. It can be useful if you have a record
+---- field that is only filled in sometimes. Or if a function takes a value sometimes,
+---- but does not absolutely need it.
+--type alias Model =
+--  { person: Maybe Person
+--  , msg: String
+--  }
+--
+--type Msg
+--  = FetchPerson
+--  | GotPerson (Result Http.Error Person)
+--
+---- "Cmd" / A command is a way of telling Elm, “Hey, I want you to do this thing!” So if you want to send an HTTP request,
+----         you would need to command Elm to do it. Or if you wanted to ask for geolocation, you would need to command Elm to go get it
+---- "Cmd.none" / Tells the runtime that there are no commands.
+---- "Nothing" / Provide a default value, turning an optional value into a normal
+--init: () -> (Model, Cmd Msg)
+--init _ = (Model Nothing "OK", Cmd.none)
+--
+--update : Msg -> Model ->  ( Model, Cmd Msg )
+--update message model =
+--  case message of
+--    FetchPerson -> (model, fetchPerson)
+--
+--    GotPerson (Ok p) -> ({ model | person = Just p }, Cmd.none)
+--
+--    GotPerson (Err err) -> ({ model | msg = (printError err) }, Cmd.none)
+--
+--printError: Http.Error -> String
+--printError error =
+--  case error of
+--    Http.BadBody m -> "Bad body "++m
+--    Http.BadUrl u -> "Bad URL: "++u
+--    Http.Timeout -> "Timeout"
+--    Http.NetworkError -> "Network panic"
+--    Http.BadStatus i -> "Bad Status: "++(String.fromInt i)
+--
+--fetchPerson: Cmd Msg
+--fetchPerson =
+--  Http.get
+--    { url = "person.json"
+--    , expect = Http.expectJson GotPerson personDecoder
+--    }
+--
+--personDecoder: Json.Decode.Decoder Person
+--personDecoder =
+--  Json.Decode.map3 Person
+--    (Json.Decode.at ["name"] Json.Decode.string)
+--    (Json.Decode.at ["age"] Json.Decode.int)
+--    (Json.Decode.at ["email"] Json.Decode.string)
+--
+--personListDecoder : Decoder (List Person)
+--personListDecoder =
+--    Json.Decode.list personDecoder
+--
+--noSubscriptions: Model -> Sub Msg
+--noSubscriptions model =
+--  Sub.none
+--
+--showIt: Model -> Html Msg
+--showIt model =
+--  div []
+--    [ text ("Person is "++(getName model.person))
+--    , br [] []
+--    , text model.msg
+--    , hr [] []
+--    , button [onClick FetchPerson] [text "Click this"]
+--    ]
+--
+--getName: Maybe Person -> String
+--getName mp =
+--  case mp of
+--    Just person -> person.name++" age: "++(String.fromInt person.age)++ " email: " ++ person.email
+--    Nothing ->     "Øhh"
