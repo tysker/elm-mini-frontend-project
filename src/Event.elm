@@ -3,7 +3,6 @@ module Event exposing (..)
 import Gamer exposing (Gamer)
 import Http
 
-
 type Event
     --Gamer
     = FetchGamer (Int)
@@ -12,6 +11,7 @@ type Event
     | FetchGamers
     | GotGamers (Result Http.Error (List Gamer))
     --Post Gamer
+    | FetchPost (String, String)
     | GotPosted (Result Http.Error ())
     --Delete Gamer
     | FetchDelete (Int)

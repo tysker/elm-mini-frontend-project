@@ -5,3 +5,8 @@ type alias Gamer =
     , nickname : String
     , score : Int
     }
+
+type alias GamerModel =
+    { gamer: Maybe Gamer
+    , msg: String
+    }

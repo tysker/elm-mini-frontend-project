@@ -20,7 +20,7 @@ gamerListDecoder = JD.list gamerDecoder
 gamerEncoder: Gamer -> JE.Value
 gamerEncoder gamer =
     JE.object
-        [ ("id", JE.int gamer.id)
-        , ("nickname" , JE.string gamer.nickname)
+        [
+          ("nickname" , JE.string gamer.nickname)
         , ("score" , JE.int gamer.score)
         ]

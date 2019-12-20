@@ -3,7 +3,7 @@ module Main exposing (..)
 --ELM PACKAGES
 import Browser
 import Event exposing (Event(..))
-import Fetch exposing (deleteGamer, fetchGamer, fetchGamers, printError)
+import Fetch exposing (deleteGamer, fetchGamer, fetchGamers, printError, postGamers)
 --
 --LOCAL IMPORTS
 import Gamer as GA exposing (..)
@@ -16,7 +16,8 @@ fromJust x = case x of
     Nothing -> 0
 
 init: () -> (Model, Cmd Event)
-init _ = ( Model [] 0 0 "" , Cmd.none )
+init _ = (Model [] 0 "" "" 0 "" , Cmd.none )
+--init _ = Model({ gamers = , id = 0, nickname = "", score = "", delete = 0, event = ""})
 
 update: Event -> Model -> (Model, Cmd Event)
 update event model =
@@ -30,6 +31,7 @@ update event model =
         GotGamers (Ok gamer) -> ({ model | gamers = gamer }, Cmd.none)
         GotGamers (Err err) -> ({ model | event = (printError err) }, Cmd.none)
         --Post Gamer
+        FetchPost (nickname, score) -> (model, postGamers (nickname, score))
         GotPosted (Ok p) -> ( { model | event = ("Posted person successfully") } , Cmd.none)
         GotPosted (Err err) -> ({ model | event = (printError err) }, Cmd.none)
         --Delete Gamers

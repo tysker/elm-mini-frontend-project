@@ -40,12 +40,12 @@ deleteGamer (id) =
     , tracker = Nothing
     }
 
-postGamers: (String) -> Cmd Event
-postGamers (name) =
+postGamers: (String, String) -> Cmd Event
+postGamers (nickname, score) =
   Http.request
     { method = "POST"
     , headers = []
-    , url = "http://localhost:4711/member/" ++ name
+    , url = "http://localhost:4711/gamer/" ++ nickname ++ "/" ++ score
     , body = Http.emptyBody
     , expect = Http.expectWhatever GotPosted
     , timeout = Nothing
