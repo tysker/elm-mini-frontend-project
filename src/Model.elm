@@ -7,7 +7,7 @@ type alias Model =
     { gamers: List Gamer
     , id: Int
     , nickname: String
-    , score: String
+    , score: Int
     , delete: Int
     , event: String
     }

@@ -25,9 +25,10 @@ view model =
         , button [onClick (FetchDelete (model.delete))] [text "Delete A Gamer By ID"]
         , br [] []
         , br [] []
-        , input [ placeholder "Nickname", value model.nickname, onInput Input1] []
-        , input [ placeholder "Score", value model.score, onInput Input1] []
-        , button [onClick (FetchPost (model.nickname, model.score))] [text "Add A Gamer "]
+        , input [ placeholder "ID", value (String.fromInt model.id), onInput Input1] []
+        , input [ placeholder "Nickname", value model.nickname, onInput Input3] []
+        , input [ placeholder "Score", value (String.fromInt model.score), onInput Input4] []
+        , button [onClick (FetchPost (String.fromInt model.id, model.nickname, String.fromInt model.score))] [text "Add A Gamer "]
         ]
 
 showGamer : Gamer -> Html Event

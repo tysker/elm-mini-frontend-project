@@ -7,20 +7,14 @@
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Event.elmo" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Event.elmo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Fetch.elmi" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Fetch.elmi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Fetch.elmo" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Fetch.elmo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Gamer.elmi" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Gamer.elmi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Gamer.elmo" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Gamer.elmo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Json.elmo" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Json.elmo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Main.elmi" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Main.elmi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Main.elmo" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Main.elmo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Model.elmi" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Model.elmi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Model.elmo" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Model.elmo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/View.elmi" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/View.elmi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/View.elmo" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/View.elmo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/d.dat" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/d.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Event.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/Event.elm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Fetch.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fetch.elm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gamer.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gamer.elm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Json.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/Json.elm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.elm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model.elm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/View.elm" afterDir="false" />
@@ -63,7 +57,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="D:/Kotlin/KotlinWebserver" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ElmCodeFraAnders" />
     <property name="settings.editor.selected.configurable" value="org.elm.workspace.ui.ElmWorkspaceConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -106,10 +100,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1576703053247">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1576871881785">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/-1680.0.1680.1010/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576703053247" />
+    <state x="740" y="275" key="FileChooserDialogImpl/-1680.0.1680.1010/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576871881785" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1576702344103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -118,9 +112,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="540" key="StructurePopup/-1680.0.1680.1010/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576824021486" />
-    <state x="631" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1576731841139">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1128" y="334" key="com.intellij.ide.util.TipDialog" timestamp="1576845491337">
+      <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
+    <state x="-1128" y="334" key="com.intellij.ide.util.TipDialog/-1680.0.1680.1010/0.0.1920.1040/1920.0.1920.1040@-1680.0.1680.1010" timestamp="1576845491337" />
     <state x="631" y="344" key="com.intellij.ide.util.TipDialog/-1680.0.1680.1010/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576731841139" />
     <state x="2087" y="0" width="1409" height="1027" key="dock-window-1" timestamp="1576822121612">
       <screen x="1920" y="0" width="1920" height="1040" />

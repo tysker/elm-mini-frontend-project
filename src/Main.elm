@@ -16,7 +16,7 @@ fromJust x = case x of
     Nothing -> 0
 
 init: () -> (Model, Cmd Event)
-init _ = (Model [] 0 "" "" 0 "" , Cmd.none )
+init _ = (Model [] 0 "" 0 0 "" , Cmd.none )
 --init _ = Model({ gamers = , id = 0, nickname = "", score = "", delete = 0, event = ""})
 
 update: Event -> Model -> (Model, Cmd Event)
@@ -31,7 +31,7 @@ update event model =
         GotGamers (Ok gamer) -> ({ model | gamers = gamer }, Cmd.none)
         GotGamers (Err err) -> ({ model | event = (printError err) }, Cmd.none)
         --Post Gamer
-        FetchPost (nickname, score) -> (model, postGamers (nickname, score))
+        FetchPost (id, nickname, score) -> (model, postGamers (id, nickname, score))
         GotPosted (Ok p) -> ( { model | event = ("Posted person successfully") } , Cmd.none)
         GotPosted (Err err) -> ({ model | event = (printError err) }, Cmd.none)
         --Delete Gamers
@@ -41,7 +41,8 @@ update event model =
         --Input Value
         Input1 (newContent) -> ({ model | id = fromJust (String.toInt(newContent))}, Cmd.none)
         Input2(newContent) -> ({ model | delete = fromJust (String.toInt(newContent))}, Cmd.none)
-        Input3 (newContent) -> ({ model | id = fromJust (String.toInt(newContent))}, Cmd.none)
+        Input3 (newContent) -> ({ model | nickname = newContent }, Cmd.none)
+        Input4 (newContent) -> ({ model | score = fromJust (String.toInt(newContent)) }, Cmd.none)
 
 noSubscriptions: Model -> Sub Event
 noSubscriptions model =
