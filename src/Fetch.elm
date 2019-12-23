@@ -1,8 +1,9 @@
 module Fetch exposing (..)
 
 import Event exposing (..)
+import Gamer exposing (Gamer)
 import Http
-import Json exposing (gamerDecoder, gamerListDecoder)
+import Json exposing (gamerDecoder, gamerListDecoder, gamerEncoder)
 
 fetchGamer: Int -> Cmd Event
 fetchGamer id =
@@ -40,13 +41,13 @@ deleteGamer (id) =
     , tracker = Nothing
     }
 
-postGamers: (String, String, String) -> Cmd Event
+postGamers: (Int, String, Int) -> Cmd Event
 postGamers (id, nickname, score) =
   Http.request
     { method = "POST"
     , headers = []
-    , url = "http://localhost:4711/gamer/" ++ id ++ "/" ++ nickname ++ "/" ++ score
-    , body = Http.emptyBody
+    , url = "http://localhost:4711/gamer"
+    , body = Http.jsonBody <| gamerEncoder (Gamer id nickname score)
     , expect = Http.expectWhatever GotPosted
     , timeout = Nothing
     , tracker = Nothing

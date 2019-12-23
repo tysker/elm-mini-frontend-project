@@ -31,7 +31,8 @@ update event model =
         GotGamers (Ok gamer) -> ({ model | gamers = gamer }, Cmd.none)
         GotGamers (Err err) -> ({ model | event = (printError err) }, Cmd.none)
         --Post Gamer
-        FetchPost (id, nickname, score) -> (model, postGamers (id, nickname, score))
+{-        FetchPost (id, nickname, score) -> (model, postGamers (id, nickname, score))-}
+        PostGamers (id, nickname, score) -> (model, postGamers (id, nickname, score))
         GotPosted (Ok p) -> ( { model | event = ("Posted person successfully") } , Cmd.none)
         GotPosted (Err err) -> ({ model | event = (printError err) }, Cmd.none)
         --Delete Gamers

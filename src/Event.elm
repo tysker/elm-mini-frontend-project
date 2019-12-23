@@ -11,7 +11,8 @@ type Event
     | FetchGamers
     | GotGamers (Result Http.Error (List Gamer))
     --Post Gamer
-    | FetchPost (String, String, String)
+    -- | FetchPost (String, String, String)
+    | PostGamers (Int, String, Int)
     | GotPosted (Result Http.Error ())
     --Delete Gamer
     | FetchDelete (Int)
