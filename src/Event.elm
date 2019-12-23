@@ -21,3 +21,4 @@ type Event
     | Input2 (String)
     | Input3 (String)
     | Input4 (String)
+    | Input5 (String)

@@ -5,18 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Event.elmi" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Event.elmi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Event.elmo" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Event.elmo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Fetch.elmi" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Fetch.elmi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Fetch.elmo" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Fetch.elmo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Main.elmi" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Main.elmi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Main.elmo" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Main.elmo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Model.elmi" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Model.elmi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/View.elmi" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/View.elmi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/View.elmo" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/View.elmo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/d.dat" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/d.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Event.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/Event.elm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fetch.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fetch.elm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.elm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model.elm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/View.elm" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,10 +110,10 @@
     </state>
     <state x="-1128" y="334" key="com.intellij.ide.util.TipDialog/-1680.0.1680.1010/0.0.1920.1040/1920.0.1920.1040@-1680.0.1680.1010" timestamp="1576845491337" />
     <state x="631" y="344" key="com.intellij.ide.util.TipDialog/-1680.0.1680.1010/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576731841139" />
-    <state x="2087" y="0" width="1409" height="1027" key="dock-window-1" timestamp="1576822121612">
+    <state x="2288" y="0" width="1398" height="1026" key="dock-window-1" timestamp="1576875262521">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2087" y="0" width="1409" height="1027" key="dock-window-1/-1680.0.1680.1010/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576822121612" />
+    <state x="2288" y="0" width="1398" height="1026" key="dock-window-1/-1680.0.1680.1010/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576875262521" />
     <state x="1920" y="0" width="1409" height="1027" key="dock-window-2" timestamp="1576826026011">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

@@ -43,6 +43,7 @@ update event model =
         Input2(newContent) -> ({ model | delete = fromJust (String.toInt(newContent))}, Cmd.none)
         Input3 (newContent) -> ({ model | nickname = newContent }, Cmd.none)
         Input4 (newContent) -> ({ model | score = fromJust (String.toInt(newContent)) }, Cmd.none)
+        Input5 (newContent) -> ({ model | id = fromJust (String.toInt(newContent))}, Cmd.none)
 
 noSubscriptions: Model -> Sub Event
 noSubscriptions model =
