@@ -21,7 +21,7 @@ view model =
         , button [ onClick (FetchGamers)] [ text "Get All Gamers" ]
         , br [] []
         , br [] []
-        , input [value (String.fromInt(model.delete)), onInput Input2] []
+        , input [placeholder "ID", value (String.fromInt(model.delete)), onInput Input2] []
         , button [onClick (FetchDelete (model.delete))] [text "Delete A Gamer By ID"]
         , br [] []
         , br [] []

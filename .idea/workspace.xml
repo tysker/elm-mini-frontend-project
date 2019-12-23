@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bbcb21c7-8c43-4b07-8372-0ba6dea4ec44" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Event.elmi" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Event.elmi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Event.elmo" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Event.elmo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Main.elmo" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Main.elmo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/View.elmo" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/View.elmo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/d.dat" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/d.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Event.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/Event.elm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.elm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/View.elm" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +45,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ElmCodeFraAnders" />
+    <property name="last_opened_file_path" value="D:/Kotlin/KotlinWebserver" />
     <property name="settings.editor.selected.configurable" value="org.elm.workspace.ui.ElmWorkspaceConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -93,10 +88,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1576871881785">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1577091641220">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/-1680.0.1680.1010/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576871881785" />
+    <state x="740" y="275" key="FileChooserDialogImpl/-1680.0.1680.1010/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577091641220" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1576702344103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -110,10 +105,10 @@
     </state>
     <state x="-1128" y="334" key="com.intellij.ide.util.TipDialog/-1680.0.1680.1010/0.0.1920.1040/1920.0.1920.1040@-1680.0.1680.1010" timestamp="1576845491337" />
     <state x="631" y="344" key="com.intellij.ide.util.TipDialog/-1680.0.1680.1010/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576731841139" />
-    <state x="2288" y="0" width="1398" height="1026" key="dock-window-1" timestamp="1576875262521">
+    <state x="2288" y="0" width="1398" height="1026" key="dock-window-1" timestamp="1577091610962">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2288" y="0" width="1398" height="1026" key="dock-window-1/-1680.0.1680.1010/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576875262521" />
+    <state x="2288" y="0" width="1398" height="1026" key="dock-window-1/-1680.0.1680.1010/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577091610962" />
     <state x="1920" y="0" width="1409" height="1027" key="dock-window-2" timestamp="1576826026011">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
