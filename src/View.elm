@@ -28,7 +28,7 @@ view model =
         , input [ placeholder "ID", value (String.fromInt model.id), onInput Input5] []
         , input [ placeholder "Nickname", value model.nickname, onInput Input3] []
         , input [ placeholder "Score", value (String.fromInt model.score), onInput Input4] []
-        , button [onClick (PostGamers (model.id, model.nickname, model.score))] [text "Add A Gamer "]
+        , button [onClick (PostGamers model.id model.nickname model.score)] [text "Add A Gamer "]
         ]
 
 showGamer : Gamer -> Html Event

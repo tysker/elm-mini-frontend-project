@@ -41,8 +41,8 @@ deleteGamer (id) =
     , tracker = Nothing
     }
 
-postGamers: (Int, String, Int) -> Cmd Event
-postGamers (id, nickname, score) =
+postGamers: Int -> String -> Int -> Cmd Event
+postGamers id nickname score =
   Http.request
     { method = "POST"
     , headers = []

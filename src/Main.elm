@@ -19,11 +19,12 @@ init: () -> (Model, Cmd Event)
 init _ = (Model [] 0 "" 0 0 "" , Cmd.none )
 --init _ = Model({ gamers = , id = 0, nickname = "", score = "", delete = 0, event = ""})
 
+
 update: Event -> Model -> (Model, Cmd Event)
 update event model =
     case event of
         --Get one gamer
-        FetchGamer (id) -> (model, fetchGamer id)
+        FetchGamer id -> (model, fetchGamer id)
         (GotGamer (Ok gamer)) -> ({ model | gamers = [gamer]}, Cmd.none)
         (GotGamer (Err err)) -> ({ model | event = (printError err) }, Cmd.none)
         --Get all gamer
@@ -32,7 +33,7 @@ update event model =
         GotGamers (Err err) -> ({ model | event = (printError err) }, Cmd.none)
         --Post Gamer
 {-        FetchPost (id, nickname, score) -> (model, postGamers (id, nickname, score))-}
-        PostGamers (id, nickname, score) -> (model, postGamers (id, nickname, score))
+        PostGamers id nickname score -> (model, postGamers id nickname score)
         GotPosted (Ok p) -> ( { model | event = ("Posted person successfully") } , Cmd.none)
         GotPosted (Err err) -> ({ model | event = (printError err) }, Cmd.none)
         --Delete Gamers

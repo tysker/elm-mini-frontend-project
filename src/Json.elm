@@ -21,6 +21,7 @@ gamerEncoder: Gamer -> JE.Value
 gamerEncoder gamer =
     JE.object
         [
-          ("nickname" , JE.string gamer.nickname)
+          ("id" , JE.int gamer.id)
+        , ("nickname" , JE.string gamer.nickname)
         , ("score" , JE.int gamer.score)
         ]
