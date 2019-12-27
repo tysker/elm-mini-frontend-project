@@ -5,20 +5,21 @@ import Http
 
 type Event
     --Gamer
-    = FetchGamer (Int)
+    = FetchGamer Int
     | GotGamer (Result Http.Error Gamer)
     --Gamers
     | FetchGamers
     | GotGamers (Result Http.Error (List Gamer))
     --Post Gamer
-    | FetchPost (String, String, String)
+    -- | FetchPost (String, String, String)
+    | PostGamers Int String Int
     | GotPosted (Result Http.Error ())
     --Delete Gamer
-    | FetchDelete (Int)
+    | FetchDelete Int
     | GotDeleted (Result Http.Error ())
     --Input Values
-    | Input1 (String)
-    | Input2 (String)
-    | Input3 (String)
-    | Input4 (String)
-    | Input5 (String)
+    | Input1 String
+    | Input2 String
+    | Input3 String
+    | Input4 String
+    | Input5 String
