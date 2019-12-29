@@ -25,8 +25,8 @@ update event model =
     case event of
         --Get one gamer
         FetchGamer id -> (model, fetchGamer id)
-        (GotGamer (Ok gamer)) -> ({ model | gamers = [gamer]}, Cmd.none)
-        (GotGamer (Err err)) -> ({ model | event = (printError err) }, Cmd.none)
+        GotGamer (Ok gamer) -> ({ model | gamers = [gamer]}, Cmd.none)
+        GotGamer (Err err) -> ({ model | event = (printError err) }, Cmd.none)
         --Get all gamer
         FetchGamers -> (model, fetchGamers)
         GotGamers (Ok gamer) -> ({ model | gamers = gamer }, Cmd.none)
@@ -42,7 +42,7 @@ update event model =
         GotDeleted (Err err) -> ({ model | event = ("Attempted to Delete person failed.") }, Cmd.none)
         --Input Value
         Input1 (newContent) -> ({ model | id = fromJust (String.toInt(newContent))}, Cmd.none)
-        Input2(newContent) -> ({ model | delete = fromJust (String.toInt(newContent))}, Cmd.none)
+        Input2 (newContent) -> ({ model | delete = fromJust (String.toInt(newContent))}, Cmd.none)
         Input3 (newContent) -> ({ model | nickname = newContent }, Cmd.none)
         Input4 (newContent) -> ({ model | score = fromJust (String.toInt(newContent)) }, Cmd.none)
         Input5 (newContent) -> ({ model | id = fromJust (String.toInt(newContent))}, Cmd.none)
@@ -58,3 +58,4 @@ main = Browser.element
   , subscriptions = noSubscriptions
   , view = view
   }
+

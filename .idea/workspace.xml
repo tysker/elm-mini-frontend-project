@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbcb21c7-8c43-4b07-8372-0ba6dea4ec44" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Ueben.elm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Event.elmi" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Event.elmi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Event.elmo" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Event.elmo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Fetch.elmi" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Fetch.elmi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Fetch.elmo" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Fetch.elmo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Json.elmo" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Json.elmo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/Main.elmo" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/Main.elmo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/View.elmo" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/View.elmo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/elm-stuff/0.19.1/d.dat" beforeDir="false" afterPath="$PROJECT_DIR$/elm-stuff/0.19.1/d.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Event.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/Event.elm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fetch.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fetch.elm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.elm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View.elm" beforeDir="false" afterPath="$PROJECT_DIR$/src/View.elm" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +52,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SimpleWebPage" />
     <property name="settings.editor.selected.configurable" value="org.elm.workspace.ui.ElmWorkspaceConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -65,23 +63,23 @@
       <recent name="D:\Elm\ElmSkoleProjekt" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration default="true" type="ELM_TEST_RUN_CONFIGURATION" factoryName="Elm Test configuration factory">
-      <ElmTestRunConfiguration elm-folder="C:\Users\Claus\Documents\Datamatiker2018\4Semester\Elm\code\elmMiniproject" />
+      <ElmTestRunConfiguration elm-folder="D:\Elm\ElmSkoleProjekt" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -101,17 +99,20 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1577091641220">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1197" y="248" key="FileChooserDialogImpl" timestamp="1577604674405">
+      <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/-1680.0.1680.1010/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577091641220" />
+    <state x="-1197" y="248" key="FileChooserDialogImpl/-1680.0.1680.1010/0.0.1920.1040/1920.0.1920.1040@-1680.0.1680.1010" timestamp="1577604674405" />
+    <state x="740" y="275" key="FileChooserDialogImpl/-1680.0.1680.1010/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577602811998" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1576702344103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -138,5 +139,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-7" y="0" width="1064" height="1027" key="dock-window-3/-1680.0.1680.1010/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576829295845" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1577466300151">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1680.0.1680.1010/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577466300151" />
   </component>
 </project>
